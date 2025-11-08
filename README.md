@@ -1,6 +1,6 @@
 # nativescript-haxe
 
-This is a complete **SwiftUI-style declarative UI framework** for **Haxe** that compiles to **NativeScript for Android** and **native Windows Runtime applications**.
+This is a **SwiftUI-style declarative UI framework** for **Haxe** that compiles to **NativeScript for Android** and **native Windows Runtime applications**.
 
 Write once in Haxe, deploy to Android and Windows with native performance and native UI controls.
 
@@ -8,7 +8,7 @@ Write once in Haxe, deploy to Android and Windows with native performance and na
 
 - 🎨 **SwiftUI-style Declarative API** - Intuitive, composable UI components
 - 📱 **Native Android** - Full NativeScript integration with native Android controls
-- 🪟 **Native Windows** - Native Windows Runtime (not Electron)
+- 🪟 **Native Windows** - Native Windows Runtime
 - ⚡ **Reactive State Management** - Built-in `State<T>` system with auto-updates
 - 🔄 **Smart Reconciliation** - Virtual DOM diffing for optimal performance
 - 🎯 **Type-Safe** - Full Haxe type safety across platforms
@@ -33,11 +33,7 @@ git clone https://github.com/Computeroid/nativescript-haxe.git
 cd nativescript-haxe
 
 # Run setup script
-chmod +x scripts/setup.sh
-./scripts/setup.sh
-
-# Or use Make
-make setup
+.\Makefile.bat setup
 ```
 
 ### Manual Installation
@@ -52,7 +48,7 @@ npm install
 cd ../..
 
 # Generate Haxe externs
-npm run gen-externs
+.\Makefile.bat externs
 
 # Install as Haxelib
 haxelib dev nativescript-haxe .

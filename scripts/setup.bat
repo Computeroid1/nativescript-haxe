@@ -45,7 +45,7 @@ where ns >nul 2>nul
 if %ERRORLEVEL% NEQ 0 (
     echo.
     echo NativeScript CLI not found. Installing globally...
-    call npm install -g @nativescript/cli
+    call npm install -g nativescript
     if %ERRORLEVEL% NEQ 0 (
         echo ERROR: Failed to install NativeScript CLI
         echo You may need administrator privileges

@@ -6,6 +6,7 @@ if "%1"=="build" goto build
 if "%1"=="android" goto android
 if "%1"=="windows" goto windows
 if "%1"=="clean" goto clean
+if "%1"=="externs" goto externs
 goto help
 
 :setup
@@ -15,7 +16,14 @@ call npm install -g nativescript
 cd template\app
 call npm install
 cd ..\..
+echo Generating Haxe externs
+call .\Makefile.bat gen-externs.bat
 echo Setup complete!
+goto end
+
+:externs
+echo Generating Haxe externs
+call .\Makefile.bat gen-externs.bat
 goto end
 
 :build
@@ -49,6 +57,7 @@ echo.
 echo Commands:
 echo   setup    - Install dependencies
 echo   build    - Build library
+echo   externs  - Generate haxe externs
 echo   android  - Build and run Android
 echo   windows  - Build for Windows
 echo   clean    - Clean build artifacts
