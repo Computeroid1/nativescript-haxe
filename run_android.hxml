@@ -1,0 +1,9 @@
+-cp library/src
+-cp template/src
+-main Main
+-D android
+-js template/app/app.js
+-lib hxnodejs
+-dce full
+
+--next

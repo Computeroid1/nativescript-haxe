@@ -1,0 +1,5 @@
+-cp library/src
+-D analyzer-optimize
+-dce full
+
+--next

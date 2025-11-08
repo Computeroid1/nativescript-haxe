@@ -1,0 +1,31 @@
+{
+"name": "nativescript-haxe",
+"version": "1.0.0",
+"description": "SwiftUI-style declarative UI framework for Haxe targeting NativeScript and Windows",
+"main": "library/src/ns/core/App.hx",
+"scripts": {
+"build": "haxe build.hxml",
+"build:android": "haxe run_android.hxml && cd template/app && ns run android",
+"build:windows": "haxe run_windows.hxml",
+"gen-externs": "./scripts/gen-externs.sh",
+"setup": "cd template/app && npm install"
+},
+"keywords": [
+"haxe",
+"nativescript",
+"windows",
+"ui",
+"declarative",
+"swiftui",
+"cross-platform"
+],
+"author": "nativescript-haxe contributors",
+"license": "MIT",
+"devDependencies": {
+"@nativescript/core": "^8.5.0",
+"@nativescript/android": "^8.5.0",
+"@nativescript/webpack": "^5.0.0",
+"dts2hx": "^0.18.0"
+},
+"dependencies": {}
+}

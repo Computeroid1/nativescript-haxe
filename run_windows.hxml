@@ -1,0 +1,6 @@
+-cp library/src
+-cp template/src
+-main Main
+-D windows
+-js template/build/windows.js
+-dce full

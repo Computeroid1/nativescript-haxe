@@ -1,0 +1,12 @@
+{
+"name": "nativescript-haxe",
+"url": "https://github.com/yourusername/nativescript-haxe",
+"license": "MIT",
+"tags": ["ui", "nativescript", "windows", "cross-platform", "declarative"],
+"description": "SwiftUI-style declarative UI framework for Haxe targeting NativeScript Android and native Windows",
+"version": "1.0.0",
+"classPath": "library/src/",
+"releasenote": "Initial release with full SwiftUI-style API, state management, and platform adapters",
+"contributors": ["nativescript-haxe"],
+"dependencies": {}
+}

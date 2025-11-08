@@ -1,0 +1,66 @@
+# Haxe
+*.n
+*.swf
+dump/
+*.cpp
+*.cs
+*.java
+*.py
+
+# Build outputs
+template/app/app.js
+template/app/app.js.map
+template/build/
+*.js.map
+
+# NativeScript
+template/app/platforms/
+template/app/node_modules/
+template/app/hooks/
+template/app/.ns-livesync-*
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+*.class
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Generated externs (can be regenerated)
+library/externs/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
